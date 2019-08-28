@@ -38,8 +38,8 @@ export default class LoginScreen extends React.Component<{login: Function}, {ema
         Request
         .post(environment.auth_login_url, {'email': this.state.email, 'password': this.state.password})
         .then((res) => {
-            if(res.success == true) {
-                this.props.login(JSON.stringify(res.user));
+            if(res['success'] == true) {
+                this.props.login(JSON.stringify(res['user']));
             } else {
                 this.setState({errorMsg: "Login Attempt Failed! Try Again!"});
             }      

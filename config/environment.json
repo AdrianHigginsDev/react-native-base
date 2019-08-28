@@ -1,7 +1,8 @@
 {
     "app_name": "Library",
     "mode": "development",
-    "local_base_url": "http://localhost:8000/",
+    "local_base_url": "http://localhost:8000",
     "prod_base_url": "https://website.com",
-    "auth_login_url": "mobile/login"
+    "auth_login_url": "mobile/login",
+    "authentication_token": ""
 }
